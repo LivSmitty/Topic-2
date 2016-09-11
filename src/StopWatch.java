@@ -8,7 +8,6 @@ public class StopWatch {
      * Created by scott_000 on 9/10/2016.
      */
 
-
     long startTime;
     long endTime;
     long elapsedTime;
@@ -19,16 +18,17 @@ public class StopWatch {
 
     }
 
-    long startTimer(long startTime) {
-        startTime = currentTimeMillis();
+    long startTimer() {
+        return startTime = currentTimeMillis();
     }
 
-    public void stopTime(long endTime) {
-        endTime = currentTimeMillis();
+    long stopTimer() {
+
+        return endTime = currentTimeMillis();
     }
 
-    public void getElapsedTime(long startTime, long endTime){
-        elapsedTime = endTime - startTime;
+    long getElapsedTime(){
+        return elapsedTime = endTime - startTime;
 
     }
 
